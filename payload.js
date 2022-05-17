@@ -4,6 +4,7 @@
   s.src =
       "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
   $("head").append(s);
+setTimeout(() => {
   var myCanvas = document.createElement("canvas");
   myCanvas.style.position = "absolute";
   myCanvas.style.top = 0;
@@ -25,3 +26,4 @@
   setTimeout(() => {
       myCanvas.style.zIndex = 0;
   }, 3000);
+  }, 500);
