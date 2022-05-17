@@ -11,7 +11,7 @@ setTimeout(() => {
   myCanvas.style.right = 0;
   myCanvas.style.left = 0;
   myCanvas.style.bottom = 0;
-  myCanvas.style.zIndex = 10;
+  myCanvas.style.zIndex = 10000;
   document.body.appendChild(myCanvas);
   myCanvas.height = 1000;
   myCanvas.width = 1000;
@@ -20,7 +20,7 @@ setTimeout(() => {
       useWorker: true,
   });
   myConfetti({
-      particleCount: 5000,
+      particleCount: 2000,
       spread: 340,
   });
   setTimeout(() => {
